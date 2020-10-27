@@ -1,0 +1,223 @@
+* {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: europa, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-style: normal;
+  font-weight: 400;
+}
+
+header {
+  position: absolute;
+  padding-left: 50px;
+  height: 10vh;
+  z-index: 9;
+}
+
+header h1{
+  color: white;
+  font-size: 50px;
+}
+
+#logo {
+  position: fixed;
+  top: 30px;
+  left: 48%;
+  z-index: 10;
+}
+
+.logoAnimation {
+  position: fixed;
+  top: 15px;
+  left: 47%;
+  z-index: 10;
+  animation:  5s logoMove;
+  animation-fill-mode: forwards;
+  transition-timing-function: ease-in;
+}
+@keyframes logoMove {
+  from {
+    left: 48%;
+  }
+
+  to {
+    left: 2%;
+    filter: invert();
+  }
+}
+
+#projectScroll{
+  border: none;
+  background: none;
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+}
+#projectScroll:hover {
+  text-decoration: line-through;
+}
+
+.inlineBlock {
+  display: inline-block;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  z-index: 0;
+}
+
+.fillContainter {
+  display: grid;
+  height: 100vh;
+  width: 100%;
+  grid-template-columns: 7% 1FR 1FR 1FR 1FR 1FR 1FR 1FR 1FR 1% ;
+  grid-template-rows: 1% 1FR 1FR 1FR 1FR 1FR 1FR 1FR 1FR 1%;
+  column-gap: 10px;
+  row-gap: 10px;
+  background-size: cover;
+}
+
+#home {
+  background-image: url(../images/coverPhotoSterrett.jpg);
+}
+
+#projects {
+  background-image: url(../images/coverPhotoSterrettBlur.jpg);
+}
+
+.widget {
+  border: none;
+  border-radius: 10px;
+  background-size: cover;
+  font-size: 35px;
+  font-weight: bolder;
+  color: white;
+}
+
+.widget:hover {
+  text-decoration: line-through;
+}
+
+#wrldMagButton {
+  grid-column-start: 2;
+  grid-column-end: 5;
+  grid-row-start: 2;
+  grid-row-end: 5;
+  background-image: url(../images/buttons/wrldMagazineCover.jpg);
+  color: black;
+}
+
+#ikeaButton {
+  grid-column-start: 5;
+  grid-column-end: 7;
+  grid-row-start: 2;
+  grid-row-end: 7;
+  background-image: url(../images/buttons/ikeaButton.jpg);
+}
+
+#centerSutainButton {
+  grid-column-start: 2;
+  grid-column-end: 5;
+  grid-row-start: 5;
+  grid-row-end: 7;
+  background-image: url(../images/buttons/centerSustainButton.jpg);
+}
+
+#expPortButton {
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 7;
+  grid-row-end: 10;
+  background-image: url(../images/buttons/experimentalPortraits.jpg);
+}
+
+#kanyeButton {
+  grid-column-start: 4;
+  grid-column-end: 6;
+  grid-row-start: 7;
+  grid-row-end: 10;
+  background-image: url(../images/buttons/kanyeButton.jpg);
+}
+
+#vote2020Button {
+  grid-column-start: 7;
+  grid-column-end: 10;
+  grid-row-start: 2;
+  grid-row-end: 7;
+  background-image: url(../images/buttons/vote2020Upclose01.jpg);
+}
+
+#CrateDiggersButton{
+  grid-column-start: 6;
+  grid-column-end: 10;
+  grid-row-start: 7;
+  grid-row-end: 10;
+  background: url(../images/buttons/cratediggerButton.jpg);
+  color: black;
+}
+
+.projectMain {
+  grid-column-start: 2;
+  grid-column-end: 10;
+  grid-row-start: 2;
+  grid-row-end: 10;
+  border-radius: 10px;
+  z-index: 2;
+  overflow: scroll;
+}
+
+.closeButton {
+  position: absolute;
+  margin: 10px;
+  height: 50px;
+  width: 50px;
+  background-color: none;
+  border: none;
+  border-radius: 50px;
+  color: white;
+  font-weight: bolder;
+  font-size: 25px;
+}
+
+.closeButton:hover {
+  background-color: darkgrey;
+}
+
+#wrldMagMain {
+  display: none;
+  background-color: white;
+}
+
+#centerSustainMain {
+  display: none;
+  background-color: white;
+}
+
+#ikeaMain {
+  display: none;
+  background-color: white;
+}
+
+#expPortMain {
+  display: none;
+  background-color: white;
+}
+
+#kanyeMain {
+  display: none;
+  background-color: white;
+}
+
+#vote2020Main {
+  display: none;
+  background-color: white;
+}
+
+#crateDiggerMain {
+  display: none;
+  background-color: white;
+}

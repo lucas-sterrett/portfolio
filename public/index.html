@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="stylesheets/style.css">
+    <script defer src="javascripts/index.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="shortcut icon" type="image/jpg" href="images/sterrett_personal_branding_logo-white.png"/>
+    <title>lucas sterrett.</title>
+  </head>
+  <body>
+    <main class="inlineBlock">
+      <header>
+        <h1>Lucas Sterrett</h1>
+        <div id="logo">
+          <a href="index.html"><img src="images/sterrett_personal_branding_logo-white.png" alt"personal_Logo" height="50px"></a>
+        </div>
+        <a id="projectScroll" href="#projects">Projects</a>
+      </header>
+
+      <section class="fillContainter" id="home">
+      </section>
+      <section class="fillContainter" id="projects">
+        <button class="widget" id="wrldMagButton" onclick="openWrldMag()"><span id="wrldMagButtonText">wrld. Magazine</span></button>
+        <button class="widget" id="centerSutainButton" onclick="openCenterSustain()"><span id="">Center Sustain</span></button>
+        <button class="widget" id="ikeaButton" onclick="openIkea()"><span id="">Ikea Posters</span></button>
+        <button class="widget" id="expPortButton" onclick="openExpPort()"><span id="">Experimental Portraits</span></button>
+        <button class="widget" id="kanyeButton" onclick="openKanye()"><span id="">Kanye West Poster</span></button>
+        <button class="widget" id="vote2020Button" onclick="openVote2020()"><span id="">Vote 2020</span></button>
+        <button class="widget" id="CrateDiggersButton" onclick="openCrateDigger()"><span id="">Crate Diggers</span></button>
+        <div class="projectMain" id="wrldMagMain">
+          <button class="closeButton" onclick="closeWrldMag()">X</button>
+          <img src="images/mainphotos/wrldMagWEB.jpg" width="100%">
+        </div>
+        <div class="projectMain" id="centerSustainMain">
+          <button class="closeButton" onclick="closeCenterSustain()">X</button>
+          <img src="images/mainphotos/centreSustainabilityWEB.jpg" width="100%">
+        </div>
+        <div class="projectMain" id="ikeaMain">
+          <button class="closeButton" onclick="closeIkea()">X</button>
+          <img src="images/mainphotos/ikeaWEB.jpg" width="100%">
+        </div>
+        <div class="projectMain" id="expPortMain">
+          <button class="closeButton" onclick="closeExpPort()">X</button>
+          <img src="images/mainphotos/experimentalWEB.jpg" width="100%">
+        </div>
+        <div class="projectMain" id="kanyeMain">
+          <button class="closeButton" onclick="closeKanye()">X</button>
+          <img src="images/mainphotos/kanyeWEB.jpg" width="100%">
+        </div>
+        <div class="projectMain" id="vote2020Main">
+          <button class="closeButton" onclick="closeVote2020()">X</button>
+          <img src="images/mainphotos/vote2020WEB.jpg" width="100%">
+        </div>
+        <div class="projectMain" id="crateDiggerMain">
+          <button class="closeButton" onclick="closeCrateDigger()">X</button>
+          <img src="images/mainphotos/cratediggerWEB.jpg" width="100%">
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
